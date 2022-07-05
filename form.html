@@ -1,0 +1,301 @@
+<html>
+<style>
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  background-color: white;
+  color: black;
+  width: 100%;
+  height: 50px;
+}
+#title-page {
+  margin-right: 15px;
+  color: black;
+  font-family: Arial;
+  font-size: 40px;
+  align-self: center;
+  text-decoration: none;
+  height: auto;
+  padding-right: 7%;
+  padding-bottom: 5px;
+}
+
+#nav-link {
+  margin-right: 15px;
+  color: black;
+  font-family: Arial;
+  font-size: 20px;
+  align-self: center;
+  text-decoration: none;
+  height: auto;
+  padding: 5px;
+}
+#nav-link2 {
+  margin-right: 20px;
+  color: white;
+  border: solid;
+  border-radius: 10px;
+  margin-right: 25px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  font-family: Arial;
+  font-size: 20px;
+  align-self: center;
+  text-decoration: none;
+  height: auto;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: rgb(32, 132, 190);
+}
+#nav-link:hover {
+  color: rgb(32, 132, 190);
+}
+#nav-link2:hover {
+  color: rgb(32, 132, 190);
+  transform: scale(1.1);
+  background-color: rgb(22, 40, 51);
+}
+@media (max-width: 700px){
+  #navbar {
+    height: auto;
+    font-size: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  #nav-link {
+    font-size: 17px;
+    padding: 5px;
+  }
+  #title-page {
+  margin-right: 0px;
+  color: black;
+  font-family: Arial;
+  font-size: 18px;
+  align-self: center;
+  text-decoration: none;
+  height: auto;
+  padding-right: 7%;
+  padding-bottom: 5px;
+}
+}
+
+#main-container {
+  display: grid;
+  margin-left: -9px;
+  margin-bottom: -10px;
+  top: 0;
+  height: auto;
+  width: 100%;  
+  grid-template-columns: 25% 50% 25%;
+  grid-template-rows: auto auto auto;
+  /*background-color: rgb(22, 40, 51);*/
+  background-image: url("https://cdn.pixabay.com/photo/2016/09/24/08/41/hands-1691221_960_720.png");
+  background-size: cover;
+  background-position: center;
+  grid-template-areas: 
+    "empty headerone lastcol"
+    "empty description lastcol"
+    "empty content lastcol";
+}
+#title {
+  grid-area: headerone;
+  margin: 0;
+  padding-top: 30px;
+  margin-top: 30px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+}
+#description {
+  margin: 0px;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  grid-area: description;
+  justify-self: center;
+  text-align: center;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+}
+#survey-form {
+  margin: 0;
+  width: 100%;
+  grid-area: content;
+  justify-self: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+#titlepaper-label {
+  padding-left: 40px;
+  padding-bottom: 10px;
+}
+#titlepaper {
+  margin: 40px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+#url-label {
+  padding-left: 40px;
+  padding-bottom: 10px;
+}
+#usecase-label {
+  padding-left: 40px;
+  padding-bottom: 10px;
+}
+#usecase {
+  margin: 40px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+#url {
+  margin: 40px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+#year-label{
+  padding-left: 40px;
+  padding-bottom: 10px; 
+}
+#year {
+  margin: 40px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  width: 70px;
+}
+#dropdown-technology {
+  padding-left: 40px;
+  padding-bottom: 10px; 
+}
+#dropdown-context {
+  padding-left: 40px;
+  padding-bottom: 10px; 
+}
+#dropdown {
+  height: 30px;
+}
+#radio-element {
+  padding-left: 40px;
+  padding-bottom: 10px;  
+}
+#checkbox-scope {
+  padding-left: 40px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+#additional-comments {
+  padding-left: 40px;
+  padding-bottom: 10px;
+}
+#comments {
+  width: 90%;
+  height: 100px;
+  margin-bottom: 10px;
+}
+#submit {
+  align-self: center;
+  margin-left: 300px;
+  margin-bottom: 20px;
+  margin-right: 300px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-size: 19px;
+  background-color: orange;
+  color: black;
+}
+#submit:hover {
+  background-color: brown;
+  color: white;
+}
+</style>
+
+<nav id="navbar">
+  <h1 id="title-page">ICT Analysis Taxonomy</h1>
+  <a id="nav-link" href="#welcome-section">Home</a>
+  <a id="nav-link" href="#welcome-section">About</a>
+  <a id="nav-link" href="#welcome-section" style="color: rgb(32, 132, 190);">Participate</a>
+  <a id="nav-link" href="#welcome-section">News</a>
+  <a id="nav-link" href="#projects">Contact</a>
+  <a id="nav-link2" href="#contact">Go to the taxonomy</a>
+</nav>
+
+<div id="main-container">
+<h1 id=title>
+  Add a reference!
+</h1>  
+<p id="description">
+  <i>If you want to contribute to the inititative by adding a reference where the performance of a communication technology or protocol is analysed, please, fill in <strong>this form</strong></i>
+</p>  
+<form id="survey-form" name="reference form" action="https://airform.io/simplelogin-newsletter.46rmn@aleeas.com" method="post">
+  <label for="titlepaper" id="titlepaper-label">Title of the paper/document*</label><input type="titlepaper" id="titlepaper" name="titlepaper" placeholder="Enter the title of the paper or document you would like to include in the taxonomy" required>
+  <label for="url" id="url-label">DOI or URL*</label><input type="url" id="url" name="url" placeholder="Enter the DOI or URL where the paper/document can be found" required>
+  <label for="year" id="year-label">Year of publication</label><input type="number" id="year" name="year" placeholder="Enter the year of publication" min=1970 max=2050 value=2019>
+  <div id="dropdown-technology">
+    <p>What type of technology is analysed?</p>
+    <select id="dropdown" name="technology" required>
+      <option disable selected value>Select type of technology</option>
+      <option>Wired technology</option>
+      <option>Wireless technology</option>
+      <option>Both</option>
+    </select>  
+  </div>
+  <div id="dropdown-context">
+    <p>What type of use case was analysed?</p>
+    <select id="dropdown" name="context" required>
+      <option disable selected value>Select type of use case</option>
+      <option>Smart grid</option>
+      <option>Smart city</option>
+      <option>Both</option>
+    </select>  
+  </div>
+  <label for="use-case" id="usecase-label">Please, describe a bit the use case analysed</label><input type="text" id="usecase" name="usecase" placeholder="Brief sentence describing use case(s)">
+  <label for="specifictech" id="titlepaper-label">Please specify the standards/protocols analysed by the reference*</label><input type="titlepaper" id="titlepaper" name="specifictech" placeholder="Enter the standards/protocols analysed" required>
+  <div id="checkbox-scope">
+    <p>What type of analysis is/are performed?         </p>
+    <label>
+      <input type="checkbox" value="quan-scal" name="quan-scal">Quantitative scalability
+    </label>
+    <label>
+      <input type="checkbox" value="qual-scal" name="qual-scal">Qualitative scalability
+    </label>
+    <label>
+      <input type="checkbox" value="quan-repli" name="quan-repli">Quantitative replicability
+    </label>
+    <label>
+      <input type="checkbox" value="qual-repli" name="qual-repli">Qualitative replicability
+    </label>
+    <label>
+      <input type="checkbox" value="performance" name="performance">Performance - No scalability/replicability insights
+    </label>
+    <label>
+      <input type="checkbox" value="dontknow" name="dontknow">Not sure
+    </label>
+  </div>
+  <div id="additional-comments">
+    <p>Additional comments</p>
+    <textarea id="comments" name="comments" placeholder="Anything you would like to comment..."></textarea>
+  </div>  
+  <button id="submit" type="submit">Submit</button>
+</form>
+</div>  
+
+
+
+</html>
