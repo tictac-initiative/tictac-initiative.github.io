@@ -105,10 +105,12 @@
 }
 
 #about-text {
-  color: rgb(42, 40, 40);
-  grid-area: description;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 20;
+    color: rgb(42, 40, 40);
+    grid-area: description;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20;
+    text-align: justify;
+    line-height: 170%;
 }
 
 #banner-pic {
